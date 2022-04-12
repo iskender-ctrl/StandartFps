@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class FireScript : MonoBehaviour
 {
-    public GameObject bulletPrefab, bulletPosition, firePngPos, gun, character, recoilGun, magazine;
+    public GameObject bulletPrefab, bulletPosition, firePngPos, gun, character;
     public TextMeshProUGUI bulletsRemainingText;
     public ParticleSystem[] openFire;
     AudioSource fireSound;
@@ -17,7 +17,7 @@ public class FireScript : MonoBehaviour
     bool canFire = true;
     private void Awake()
     {
-        recoil = recoilGun.GetComponent<GunRecoil>();
+        recoil = gun.GetComponent<GunRecoil>();
         Camera.main.GetComponent<AudioSource>().Stop();
         fireSound = GetComponent<AudioSource>();
         bulletsRemaining = fireLength;
@@ -78,6 +78,17 @@ public class FireScript : MonoBehaviour
         {
             fireSound.Stop();
         }
+    }
+    private void OnEnable()
+    {
+        bulletsRemaining = fireLength;
+        character.GetComponent<Animator>().SetBool("reloading", false);
+
+        GetComponent<BulletPool>().reloadAgain = false;
+        canFire = true;
+        reload = 0;
+        bulletsRemaining = fireLength;
+        bulletsRemainingText.text = bulletsRemaining.ToString();
     }
     private void OnDisable()
     {

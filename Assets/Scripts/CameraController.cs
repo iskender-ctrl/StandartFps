@@ -9,9 +9,12 @@ public class CameraController : MonoBehaviour
 
     float yaw = 0f;
     float pitch = 0f;
+    bool canPlay;
 
     [SerializeField]
     GameObject kobraSight, kobraSightCrosshair, ironSight1, ironSight2, redDot, crossHair;
+    [SerializeField]
+    Animator reload;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -26,7 +29,7 @@ public class CameraController : MonoBehaviour
             transform.eulerAngles = new Vector3(pitch, yaw, 0);
         }
 
-        if (kobraSight.activeInHierarchy == true)
+        if (kobraSight.activeInHierarchy && canPlay == true)
         {
             gameObject.GetComponent<Camera>().fieldOfView = 21.9f;
             kobraSightCrosshair.SetActive(true);
@@ -36,6 +39,17 @@ public class CameraController : MonoBehaviour
         {
             gameObject.GetComponent<Camera>().fieldOfView = 50.3f;
             kobraSightCrosshair.SetActive(false);
+        }
+
+        if (kobraSight.activeInHierarchy && reload.GetCurrentAnimatorStateInfo(0).IsName("Reload2"))
+        {
+            canPlay = false;
+            print(canPlay);
+            gameObject.GetComponent<Camera>().fieldOfView = 50.3f;
+        }
+        else
+        {
+            canPlay = true;
         }
 
         if (ironSight1.activeInHierarchy || ironSight2.activeInHierarchy || redDot.activeInHierarchy || kobraSight.activeInHierarchy)
