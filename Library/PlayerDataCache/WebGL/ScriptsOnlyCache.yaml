@@ -34,6 +34,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -122,11 +123,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5978}
     - Class: 114
+      Script: {instanceID: 6088}
+    - Class: 114
       Script: {instanceID: 6364}
     - Class: 114
       Script: {instanceID: 6858}
-    - Class: 114
-      Script: {instanceID: 27616}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -484,7 +485,7 @@ ScriptsOnlyBuild:
     className: UnityOnScrollMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 7836035039750562f6e53c246b938b50
+      Hash: fe5bfa3fc0caacd152ee7263da0566de
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraController

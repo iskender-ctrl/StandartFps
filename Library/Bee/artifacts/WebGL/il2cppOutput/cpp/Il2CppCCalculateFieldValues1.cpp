@@ -8662,20 +8662,44 @@ struct CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5  : public Mono
 	float ___pitch_7;
 	// System.Boolean CameraController::canPlay
 	bool ___canPlay_8;
+	// UnityEngine.Vector3 CameraController::FirstPoint
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___FirstPoint_9;
+	// UnityEngine.Vector3 CameraController::SecondPoint
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___SecondPoint_10;
+	// UnityEngine.Vector3 CameraController::EndPoint
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___EndPoint_11;
+	// System.Single CameraController::xAngle
+	float ___xAngle_12;
+	// System.Single CameraController::yAngle
+	float ___yAngle_13;
+	// System.Single CameraController::xAngleTemp
+	float ___xAngleTemp_14;
+	// System.Single CameraController::yAngleTemp
+	float ___yAngleTemp_15;
+	// System.Boolean CameraController::unTouchable
+	bool ___unTouchable_16;
+	// System.Boolean CameraController::unMoveButton
+	bool ___unMoveButton_17;
+	// System.Single CameraController::minClampAngle
+	float ___minClampAngle_18;
+	// System.Single CameraController::maxClampAngle
+	float ___maxClampAngle_19;
+	// System.Boolean CameraController::xAngleClamp
+	bool ___xAngleClamp_20;
 	// UnityEngine.GameObject CameraController::kobraSight
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kobraSight_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kobraSight_21;
 	// UnityEngine.GameObject CameraController::kobraSightCrosshair
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kobraSightCrosshair_10;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kobraSightCrosshair_22;
 	// UnityEngine.GameObject CameraController::ironSight1
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ironSight1_11;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ironSight1_23;
 	// UnityEngine.GameObject CameraController::ironSight2
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ironSight2_12;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ironSight2_24;
 	// UnityEngine.GameObject CameraController::redDot
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___redDot_13;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___redDot_25;
 	// UnityEngine.GameObject CameraController::crossHair
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___crossHair_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___crossHair_26;
 	// UnityEngine.Animator CameraController::reload
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___reload_15;
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___reload_27;
 };
 
 // TMPro.Examples.CameraController
@@ -10557,9 +10581,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3188[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3189[8] = 
 {
 	static_cast<int32_t>(offsetof(BulletPool_t71A2E45B8ABA67229095B315BC8DAD6CF98D87FC_StaticFields, ___SharedInstance_4)),static_cast<int32_t>(offsetof(BulletPool_t71A2E45B8ABA67229095B315BC8DAD6CF98D87FC, ___pooledBullet_5)),static_cast<int32_t>(offsetof(BulletPool_t71A2E45B8ABA67229095B315BC8DAD6CF98D87FC, ___objectToPool_6)),static_cast<int32_t>(offsetof(BulletPool_t71A2E45B8ABA67229095B315BC8DAD6CF98D87FC, ___targetPos_7)),static_cast<int32_t>(offsetof(BulletPool_t71A2E45B8ABA67229095B315BC8DAD6CF98D87FC, ___bulletPos_8)),static_cast<int32_t>(offsetof(BulletPool_t71A2E45B8ABA67229095B315BC8DAD6CF98D87FC, ___amountToPool_9)),static_cast<int32_t>(offsetof(BulletPool_t71A2E45B8ABA67229095B315BC8DAD6CF98D87FC, ___rotationSpeed_10)),static_cast<int32_t>(offsetof(BulletPool_t71A2E45B8ABA67229095B315BC8DAD6CF98D87FC, ___reloadAgain_11)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3190[12] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3190[24] = 
 {
-	static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___h_4)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___v_5)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___yaw_6)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___pitch_7)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___canPlay_8)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___kobraSight_9)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___kobraSightCrosshair_10)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___ironSight1_11)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___ironSight2_12)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___redDot_13)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___crossHair_14)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___reload_15)),};
+	static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___h_4)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___v_5)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___yaw_6)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___pitch_7)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___canPlay_8)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___FirstPoint_9)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___SecondPoint_10)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___EndPoint_11)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___xAngle_12)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___yAngle_13)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___xAngleTemp_14)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___yAngleTemp_15)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___unTouchable_16)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___unMoveButton_17)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___minClampAngle_18)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___maxClampAngle_19)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___xAngleClamp_20)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___kobraSight_21)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___kobraSightCrosshair_22)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___ironSight1_23)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___ironSight2_24)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___redDot_25)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___crossHair_26)),static_cast<int32_t>(offsetof(CameraController_tDC4FF0FA10418272A26E5E7539156F4F4A98E8C5, ___reload_27)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3191[2] = 
 {
 	static_cast<int32_t>(offsetof(EnemyController_tBB576F8CA41609F61E7D9AD27B14D49FB5A11C4A, ___health_4)),static_cast<int32_t>(offsetof(EnemyController_tBB576F8CA41609F61E7D9AD27B14D49FB5A11C4A, ___speed_5)),};
